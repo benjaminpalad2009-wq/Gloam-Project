@@ -1,0 +1,21 @@
+{
+  "name": "gloam",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build:game": "node scripts/build-game.js",
+    "start": "npm run build:game && expo start",
+    "android": "npm run build:game && expo run:android"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "*",
+    "expo": "~54.0.0",
+    "expo-keep-awake": "*",
+    "expo-navigation-bar": "*",
+    "expo-status-bar": "*",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-webview": "*"
+  }
+}
